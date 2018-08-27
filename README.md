@@ -1,5 +1,3 @@
-|license|
-
 # C++ Tinkerings
 
 I am learning C++ and am using this repository to collect various ideas that I come up with.
