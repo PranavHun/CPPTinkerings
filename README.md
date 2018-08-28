@@ -5,24 +5,20 @@ I am learning C++ and am using this repository to collect various ideas that I c
 ## Getting Started
 
 The repository is divided into two parts.
-1. Code in src/ folder which builds into the include/ and lib/ folders.
-2. Code in test/ folder which tests all the features.
+1. Code in CPPTinkerings/ folder which builds into the include/ and lib/ folders.
+2. Code in examples/ folder which provides usage examples for the code built as libraries in previous step.
 
 ## Installing
 
 After the directory is cloned, you execute the following commands.
 
-cd build && cmake ../
-cmake --build . --target install
+sh build.sh all
 
-These commands build the source into include and lib.
+This will build the code in CPPTinkerings/ into include and lib folders. This will also build code in examples/ into examples/bin.
 
-From the root directory.
+For more options to build.sh execute the following command.
 
-cd test/build && cmake ../
-cmake --build . --target install
-
-This will create an executable in test/bin directory,
+sh build.sh -h
 
 ## License
 
