@@ -10,9 +10,9 @@ else(isPHdate)
         message(FATAL_ERROR "isPHdate not found")
 endif(isPHdate)
 
-add_executable(test_PHdate test_date.cpp)
-target_include_directories (test_PHdate PUBLIC ${CMAKE_PREFIX_PATH}/include)
-target_link_libraries (test_PHdate PUBLIC ${isPHdate})
+add_executable(example_PHdate example_date.cpp)
+target_include_directories (example_PHdate PUBLIC ${CMAKE_PREFIX_PATH}/include)
+target_link_libraries (example_PHdate PUBLIC ${isPHdate})
 
-install (TARGETS test_PHdate DESTINATION bin/date)
+install (TARGETS example_PHdate DESTINATION bin/date)
 

@@ -12,14 +12,16 @@ The repository is divided into two parts.
 
 After the directory is cloned, you execute the following commands.
 
+```sh
 sh build.sh all
+```
 
 This will build the code in CPPTinkerings/ into include and lib folders. This will also build code in examples/ into examples/bin.
 
 For more options to build.sh execute the following command.
-
+```sh
 sh build.sh -h
-
+```
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

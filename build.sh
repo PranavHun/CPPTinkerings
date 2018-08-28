@@ -55,7 +55,7 @@ case "$1" in
                 cmake --build . --target install
 
                 printf "building examples incrementally\n"
-                cd examples/build/
+                cd ../../examples/build/
                 cmake ../
                 cmake --build . --target install
               ;;

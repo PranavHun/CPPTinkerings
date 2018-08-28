@@ -1,6 +1,6 @@
 /**
-Name: date.hpp
-Description: A simple date class
+Name: example_date.hpp
+Description: demonstration of PHdate library
 Author: Pranav Hundekari
 */
 
