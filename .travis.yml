@@ -2,6 +2,11 @@ dist: trusty
 sudo: false
 language: cpp
 
+# safelist
+branches:
+  only:
+  - master
+
 addons:
     apt:
         sources:
@@ -11,4 +16,4 @@ addons:
 
 script:
     - CXX=/usr/bin/g++-8 CC=/usr/bin/gcc-8
-    - ./build.sh    
+    - ./build.sh all  
