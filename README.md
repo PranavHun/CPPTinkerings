@@ -1,5 +1,6 @@
 # C++ Tinkerings
-*collection of my learnings in C++ 17*
+*collection of my learnings in C++ 17* 
+
 ![C++17](https://img.shields.io/badge/C%2B%2B-17-blue.svg) ![cmake 3.8.2](https://img.shields.io/badge/cmake-3.8.2-blue.svg) [![travis-cl build status: master](https://img.shields.io/travis/pranav-h/CPPTinkerings.svg)](https://travis-ci.org/pranav-h/CPPTinkerings) [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE) [![Twitter Follow](https://img.shields.io/twitter/follow/iwhosee.svg?style=flat&label=Follow)](https://www.twitter.com/iwhosee)
 
 
@@ -64,4 +65,4 @@ clean       delete all the build folders
 
 ## Documentation
 
-[Each projects
+[Each projects]
