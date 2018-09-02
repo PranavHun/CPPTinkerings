@@ -10,5 +10,5 @@ addons:
             - g++-8
 
 script:
-    - CXX=/usr/bin/g++8 CC=/usr/bin/gcc-8
+    - CXX=/usr/bin/g++-8 CC=/usr/bin/gcc-8
     - ./build.sh    
