@@ -65,4 +65,5 @@ clean       delete all the build folders
 
 ## Documentation
 
-[Each projects]
+[TODO: github.io repository will have the necessary documentation about 
+each project]
