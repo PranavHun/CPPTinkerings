@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.11)
+cmake_minimum_required (VERSION 3.8.2)
 
 set (SOURCE_FILES csv.cpp csv.hpp)
 add_library(PHcsv STATIC ${SOURCE_FILES})

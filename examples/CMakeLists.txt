@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.11)
+cmake_minimum_required (VERSION 3.8.2)
 
 IF(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
         SET(CMAKE_INSTALL_PREFIX "../" CACHE PATH "Build in bin" FORCE)
