@@ -11,7 +11,8 @@ case "$1" in
                 cd ../CPPTinkerings/build/
                 rm -rf *
                 cmake ../
-                cmake --build . --target install
+                cmake --build . --target install -- -j2
+                ctest -- -j2
 
                 printf "building examples\n"
                 cd ../../examples/bin/
@@ -19,7 +20,7 @@ case "$1" in
                 cd ../build
                 rm -rf *
                 cmake ../
-                cmake --build . --target install
+                cmake --build . --target install -- -j2
                 ;;
         clean)
                 printf "deleting all builds\n"
@@ -36,9 +37,6 @@ case "$1" in
                 cd ../build
                 rm -rf *
                 ;;
-        examples)
-                printf "building examples\n"
-                ;;
         -h|--help)
                 printf "Usage: sh build.sh [option]\n"
                 printf "option\n"
@@ -52,11 +50,12 @@ case "$1" in
                 printf "building include/lib incrementally\n"
                 cd CPPTinkerings/build/
                 cmake ../
-                cmake --build . --target install
+                cmake --build . --target install -- -j2
+                ctest -- -j2
 
                 printf "building examples incrementally\n"
                 cd ../../examples/build/
                 cmake ../
-                cmake --build . --target install
+                cmake --build . --target install -- -j2
               ;;
 esac

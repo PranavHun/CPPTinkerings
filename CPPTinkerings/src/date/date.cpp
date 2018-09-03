@@ -54,6 +54,11 @@ date &date::operator++() {
   return *this;
 }
 
+date &date::operator--() {
+  subDay();
+  return *this;
+}
+
 bool date::operator!=(const date &dt) const { return !(*this == dt); }
 
 bool date::operator==(const date &dt) const {

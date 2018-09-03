@@ -7,5 +7,5 @@ ENDIF(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
 SET(CMAKE_PREFIX_PATH ..)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -Wall -Wextra -Wpedantic -O2")
-
+enable_testing()
 add_subdirectory (src)
