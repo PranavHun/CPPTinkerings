@@ -4,3 +4,4 @@ project (src)
 
 add_subdirectory (date)
 add_subdirectory (csv)
+add_subdirectory (stlstats)

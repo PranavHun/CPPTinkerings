@@ -5,9 +5,9 @@ project (csv)
 find_library(isPHcsv NAMES PHcsv HINTS ${CMAKE_PREFIX_PATH}/lib})
 
 if(isPHcsv)
-        message(STATUS "isPHcsv found")
+        message(STATUS "PHcsv found")
 else(isPHcsv)
-        message(FATAL_ERROR "isPHcsv not found")
+        message(FATAL_ERROR "PHcsv not found")
 endif(isPHcsv)
 
 add_executable(example_PHcsv example_csv.cpp)

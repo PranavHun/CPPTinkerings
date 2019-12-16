@@ -5,9 +5,9 @@ project (date)
 find_library(isPHdate NAMES PHdate HINTS ${CMAKE_PREFIX_PATH}/lib})
 
 if(isPHdate)
-        message(STATUS "isPHdate found")
+        message(STATUS "PHdate found")
 else(isPHdate)
-        message(FATAL_ERROR "isPHdate not found")
+        message(FATAL_ERROR "PHdate not found")
 endif(isPHdate)
 
 add_executable(example_PHdate example_date.cpp)

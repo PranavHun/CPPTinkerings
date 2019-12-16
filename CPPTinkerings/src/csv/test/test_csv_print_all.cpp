@@ -16,5 +16,7 @@ int main()
         pranavh::print_all(ofs, '\t', "sdf", 2, 100, "asdfs", 'b', 3.5);
         pranavh::print_all(std::cout, ',', "sdf", 3, 10.0, "asdfs", 'c', 3.5);
         pranavh::print_all(ofs, ';', "sdf", 4, 100.0, "asdfs", 'd', 3.5);
+        ofs.close();
+
         return 0;
 }
