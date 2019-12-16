@@ -13,6 +13,7 @@ addons:
             - ubuntu-toolchain-r-test
         packages:
             - g++-9
+            - libtbb-dev
 
 script:
     - CXX=/usr/bin/g++-9 CC=/usr/bin/gcc-9
