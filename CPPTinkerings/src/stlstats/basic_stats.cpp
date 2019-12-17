@@ -3,7 +3,6 @@
 #include <cmath>
 #include <functional>
 #include <numeric>
-#include <execution>
 
 
 namespace stlstats
@@ -14,8 +13,7 @@ namespace stlstats
                         double sigma=1.0,
                         double pwr=1.0)
         {
-                return std::reduce(std::execution::seq,
-                                v.begin(), v.end(), 0.0, 
+                return std::accumulate(v.begin(), v.end(), 0.0, 
                                 [mu, sigma, pwr] (double init, double X) 
                                 {
                                 return init + std::pow((X-mu) / sigma, pwr);
