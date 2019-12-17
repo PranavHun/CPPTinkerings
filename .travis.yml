@@ -12,9 +12,9 @@ addons:
         sources:
             - ubuntu-toolchain-r-test
         packages:
-            - g++-9
+            - g++-8
             - libtbb-dev
 
 script:
-    - CXX=/usr/bin/g++-9 CC=/usr/bin/gcc-9
+    - CXX=/usr/bin/g++-8 CC=/usr/bin/gcc-8
     - ./build.sh all  
